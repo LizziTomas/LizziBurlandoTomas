@@ -1,0 +1,39 @@
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Comparador de Pokémon</title>
+  </head>
+  <link rel="stylesheet" href="css\style.css">
+  <body>
+    <div class="banner">
+  <h1>Batalla de equipos Pokémon <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" alt="Pokebola" class="icono"></h1>
+</div>
+ 
+<div id="tiradas-container" style="display: flex; justify-content: space-around; margin-top: 20px;">
+  <div>
+    <h3>Dados equipo A</h3>
+    <ul id="tiradasA"></ul>
+    <button id="btnDadosA" onclick="tirarDados('A')">Tirar Dados Equipo A</button>
+  </div>
+
+  <div>
+    <h3>Dados equipo B</h3>
+    <ul id="tiradasB"></ul>
+    <button id="btnDadosB" onclick="tirarDados('B')">Tirar Dados Equipo B</button>
+  </div>
+</div>
+
+<br><br>
+<br><br>
+
+<button onclick="compararEquipos()">Generar equipos y comparar</button>
+    <div id="resultado"></div>
+
+  <h1></h1>
+    
+    <img src="https://static.vecteezy.com/system/resources/previews/027/127/571/non_2x/pokemon-logo-pokemon-icon-transparent-free-png.png" alt="Pokéb0ola" width="500">
+  </body>
+  <script src="js\fn.js"></script>
+
+  </html>
